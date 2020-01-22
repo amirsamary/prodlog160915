@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf ./durable/iris_conf.d
+sudo rm -rf ./durable/iris_conf.d
 
 docker run --init --name iris --rm -it \
            --volume $PWD/durable:/dur \
